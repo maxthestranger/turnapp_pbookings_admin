@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon icon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../assets/images/favicon/favicon.ico"
+    />
+
+    <!-- Libs CSS -->
+
+    <link href="../../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/dragula/dist/dragula.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/libs/prismjs/themes/prism.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/dropzone/dist/dropzone.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/magnific-popup/dist/magnific-popup.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/@yaireo/tagify/dist/tagify.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/tiny-slider/dist/tiny-slider.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/libs/tippy.js/dist/tippy.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../../assets/css/theme.min.css" />
+    <title>CMS | Geeks - Bootstrap 5 Admin Dashboard Template</title>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+      <!-- Sidebar -->
+      <nav class="navbar-vertical navbar">
+        <div class="nav-scroller">
+          <!-- Brand logo -->
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../../assets/images/brand/logo/logo-inverse.svg" alt="" />
+          </a>
+          <!-- Navbar nav -->
+          <ul class="navbar-nav flex-column" id="sideNavbar">
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navDashboard"
+                aria-expanded="false"
+                aria-controls="navDashboard"
+              >
+                <i class="nav-icon fe fe-home me-2"></i> Dashboard
+              </a>
+              <div
+                id="navDashboard"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      href="../../pages/dashboard/admin-dashboard.html"
+                    >
+                      Overview
+                    </a>
+                  </li>
+                  <!-- Nav item -->
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/dashboard-analytics.html"
+                    >
+                      Analytics
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navCourses"
+                aria-expanded="false"
+                aria-controls="navCourses"
+              >
+                <i class="nav-icon fe fe-book me-2"></i> Courses
+              </a>
+              <div
+                id="navCourses"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-course-overview.html"
+                    >
+                      All Courses
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-course-category.html"
+                    >
+                      Courses Category
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-course-category-single.html"
+                    >
+                      Category Single
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navProfile"
+                aria-expanded="false"
+                aria-controls="navProfile"
+              >
+                <i class="nav-icon fe fe-user me-2"></i> User
+              </a>
+              <div
+                id="navProfile"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-instructor.html"
+                    >
+                      Instructor
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-students.html"
+                      >Students</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navCMS"
+                aria-expanded="false"
+                aria-controls="navCMS"
+              >
+                <i class="nav-icon fe fe-book-open me-2"></i> CMS
+              </a>
+              <div
+                id="navCMS"
+                class="collapse show"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      href="../../pages/dashboard/admin-cms-overview.html"
+                    >
+                      Overview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-cms-post.html"
+                    >
+                      All Post
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-cms-post-new.html"
+                    >
+                      New Post
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/admin-cms-post-category.html"
+                    >
+                      Category
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navAuthentication"
+                aria-expanded="false"
+                aria-controls="navAuthentication"
+              >
+                <i class="nav-icon fe fe-lock me-2"></i> Authentication
+              </a>
+              <div
+                id="navAuthentication"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/sign-in.html"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/sign-up.html"
+                      >Sign Up</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/forget-password.html">
+                      Forget Password
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/notification-history.html"
+                    >
+                      Notifications
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/404-error.html">
+                      404 Error</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="nav-divider"></div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="navbar-heading">Apps</div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/dashboard/chat-app.html">
+                <i class="nav-icon fe fe-message-square me-2"></i> Chat
+              </a>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/dashboard/task-kanban.html">
+                <i class="nav-icon mdi mdi-trello me-2"></i>
+                Task
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-divider"></div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="navbar-heading">Components</div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navTables"
+                aria-expanded="false"
+                aria-controls="navTables"
+              >
+                <i class="nav-icon fe fe-database me-2"></i> Tables
+              </a>
+              <div id="navTables" class="collapse" data-bs-parent="#sideNavbar">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/basic-table.html"
+                    >
+                      Basic
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/datatables.html"
+                    >
+                      Data Tables
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Nav item -->
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="#!">
+                <i class="nav-icon fe fe-help-circle me-2"></i> Help Center
+                <span class="badge bg-success ms-2">Pro</span>
+              </a>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navSiteSetting"
+                aria-expanded="false"
+                aria-controls="navSiteSetting"
+              >
+                <i class="nav-icon fe fe-settings me-2"></i> Site Setting
+              </a>
+              <div
+                id="navSiteSetting"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/setting-general.html"
+                    >
+                      General
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/setting-google.html"
+                    >
+                      Google
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/setting-social.html"
+                    >
+                      Social
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/setting-social-login.html"
+                    >
+                      Social Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/setting-payment.html"
+                    >
+                      Payment
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/dashboard/setting-smpt.html"
+                    >
+                      SMPT
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenuLevel"
+                aria-expanded="false"
+                aria-controls="navMenuLevel"
+              >
+                <i class="nav-icon fe fe-corner-left-down me-2"></i> Menu Level
+              </a>
+              <div
+                id="navMenuLevel"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#!"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navMenuLevelSecond"
+                      aria-expanded="false"
+                      aria-controls="navMenuLevelSecond"
+                    >
+                      Two Level
+                    </a>
+                    <div
+                      id="navMenuLevelSecond"
+                      class="collapse"
+                      data-bs-parent="#navMenuLevel"
+                    >
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!">NavItem 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!">NavItem 2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link collapsed"
+                      href="#!"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navMenuLevelThree"
+                      aria-expanded="false"
+                      aria-controls="navMenuLevelThree"
+                    >
+                      Three Level
+                    </a>
+                    <div
+                      id="navMenuLevelThree"
+                      class="collapse"
+                      data-bs-parent="#navMenuLevel"
+                    >
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link collapsed"
+                            href="#!"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navMenuLevelThreeOne"
+                            aria-expanded="false"
+                            aria-controls="navMenuLevelThreeOne"
+                          >
+                            NavItem 1
+                          </a>
+                          <div
+                            id="navMenuLevelThreeOne"
+                            class="collapse collapse"
+                            data-bs-parent="#navMenuLevelThree"
+                          >
+                            <ul class="nav flex-column">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#!">
+                                  NavChild Item 1
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!">Nav Item 2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="nav-divider"></div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="navbar-heading">Documentation</div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/index.html">
+                <i class="nav-icon fe fe-clipboard me-2"></i> Documentation
+              </a>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/changelog.html">
+                <i class="nav-icon fe fe-git-pull-request me-2"></i> Changelog
+                <span class="badge bg-primary ms-2">2.2.1</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Card -->
+          <div class="card bg-dark-primary shadow-none text-center mx-4 my-8">
+            <div class="card-body py-6">
+              <img src="../../assets/images/background/giftbox.png" alt="" />
+              <div class="mt-4">
+                <h5 class="text-white">Unlimited Access</h5>
+                <p class="text-white-50 fs-6">
+                  Upgrade your plan from a Free trial, to select ‘Business
+                  Plan’. Start Now
+                </p>
+                <a href="#!" class="btn btn-white btn-sm mt-2">Upgrade Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Page Content -->
+      <div id="page-content">
+        <div class="header">
+          <!-- navbar -->
+          <nav class="navbar-default navbar navbar-expand-lg">
+            <a id="nav-toggle" href="#">
+              <i class="fe fe-menu"></i>
+            </a>
+            <div class="ms-lg-3 d-none d-md-none d-lg-block">
+              <!-- Form -->
+              <form class="d-flex align-items-center">
+                <span class="position-absolute ps-3 search-icon">
+                  <i class="fe fe-search"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control form-control-sm ps-6"
+                  placeholder="Search Entire Dashboard"
+                />
+              </form>
+            </div>
+            <!--Navbar nav -->
+            <ul
+              class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap"
+            >
+              <li class="dropdown stopevent">
+                <a
+                  class="
+                    btn btn-light btn-icon
+                    rounded-circle
+                    indicator indicator-primary
+                    text-muted
+                  "
+                  href="#"
+                  role="button"
+                  id="dropdownNotification"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fe fe-bell"></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end dropdown-menu-lg"
+                  aria-labelledby="dropdownNotification"
+                >
+                  <div class="">
+                    <div
+                      class="
+                        border-bottom
+                        px-3
+                        pb-3
+                        d-flex
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <span class="h4 mb-0">Notifications</span>
+                      <a href="# " class="text-muted">
+                        <span class="align-middle">
+                          <i class="fe fe-settings me-1"></i>
+                        </span>
+                      </a>
+                    </div>
+                    <!-- List group -->
+                    <ul
+                      class="
+                        list-group list-group-flush
+                        notification-list-scroll
+                      "
+                    >
+                      <li class="list-group-item bg-light">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-body" href="#">
+                              <div class="d-flex">
+                                <img
+                                  src="../../assets/images/avatar/avatar-1.jpg"
+                                  alt=""
+                                  class="avatar-md rounded-circle"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold mb-1">Kristin Watson:</h5>
+                                  <p class="mb-3">
+                                    Krisitn Watsan like your comment on course
+                                    Javascript Introduction!
+                                  </p>
+                                  <span class="fs-6 text-muted">
+                                    <span
+                                      ><span
+                                        class="
+                                          fe fe-thumbs-up
+                                          text-success
+                                          me-1
+                                        "
+                                      ></span
+                                      >2 hours ago,</span
+                                    >
+                                    <span class="ms-1">2:19 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-auto text-center me-2">
+                            <a
+                              href="#"
+                              class="badge-dot bg-info"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Mark as read"
+                            >
+                            </a>
+                            <div>
+                              <a
+                                href="#"
+                                class="bg-transparent"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Remove"
+                              >
+                                <i class="fe fe-x text-muted"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-body" href="#">
+                              <div class="d-flex">
+                                <img
+                                  src="../../assets/images/avatar/avatar-2.jpg"
+                                  alt=""
+                                  class="avatar-md rounded-circle"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold mb-1">Brooklyn Simmons</h5>
+                                  <p class="mb-3">
+                                    Just launched a new Courses React for
+                                    Beginner.
+                                  </p>
+                                  <span class="fs-6 text-muted">
+                                    <span
+                                      ><span
+                                        class="
+                                          fe fe-thumbs-up
+                                          text-success
+                                          me-1
+                                        "
+                                      ></span
+                                      >Oct 9,</span
+                                    >
+                                    <span class="ms-1">1:20 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-auto text-center me-2">
+                            <a
+                              href="#"
+                              class="badge-dot bg-secondary"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Mark as unread"
+                            >
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-body" href="#">
+                              <div class="d-flex">
+                                <img
+                                  src="../../assets/images/avatar/avatar-3.jpg"
+                                  alt=""
+                                  class="avatar-md rounded-circle"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold mb-1">Jenny Wilson</h5>
+                                  <p class="mb-3">
+                                    Krisitn Watsan like your comment on course
+                                    Javascript Introduction!
+                                  </p>
+                                  <span class="fs-6 text-muted">
+                                    <span
+                                      ><span
+                                        class="fe fe-thumbs-up text-info me-1"
+                                      ></span
+                                      >Oct 9,</span
+                                    >
+                                    <span class="ms-1">1:56 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-auto text-center me-2">
+                            <a
+                              href="#"
+                              class="badge-dot bg-secondary"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Mark as unread"
+                            >
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-body" href="#">
+                              <div class="d-flex">
+                                <img
+                                  src="../../assets/images/avatar/avatar-4.jpg"
+                                  alt=""
+                                  class="avatar-md rounded-circle"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold mb-1">Sina Ray</h5>
+                                  <p class="mb-3">
+                                    You earn new certificate for complete the
+                                    Javascript Beginner course.
+                                  </p>
+                                  <span class="fs-6 text-muted">
+                                    <span
+                                      ><span
+                                        class="fe fe-award text-warning me-1"
+                                      ></span
+                                      >Oct 9,</span
+                                    >
+                                    <span class="ms-1">1:56 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-auto text-center me-2">
+                            <a
+                              href="#"
+                              class="badge-dot bg-secondary"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Mark as unread"
+                            >
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="border-top px-3 pt-3 pb-0">
+                      <a
+                        href="../../pages/notification-history.html"
+                        class="text-link fw-semi-bold"
+                      >
+                        See all Notifications
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- List -->
+              <li class="dropdown ms-2">
+                <a
+                  class="rounded-circle"
+                  href="#"
+                  role="button"
+                  id="dropdownUser"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="avatar avatar-md avatar-indicators avatar-online">
+                    <img
+                      alt="avatar"
+                      src="../../assets/images/avatar/avatar-1.jpg"
+                      class="rounded-circle"
+                    />
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownUser"
+                >
+                  <div class="dropdown-item">
+                    <div class="d-flex">
+                      <div
+                        class="avatar avatar-md avatar-indicators avatar-online"
+                      >
+                        <img
+                          alt="avatar"
+                          src="../../assets/images/avatar/avatar-1.jpg"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="ms-3 lh-1">
+                        <h5 class="mb-1">Annette Black</h5>
+                        <p class="mb-0 text-muted">annette@geeksui.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <ul class="list-unstyled">
+                    <li class="dropdown-submenu dropstart-lg">
+                      <a
+                        class="
+                          dropdown-item dropdown-list-group-item dropdown-toggle
+                        "
+                        href="#"
+                      >
+                        <i class="fe fe-circle me-2"></i> Status
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span class="badge-dot bg-success me-2"></span>
+                            Online
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span class="badge-dot bg-secondary me-2"></span>
+                            Offline
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span class="badge-dot bg-warning me-2"></span> Away
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <span class="badge-dot bg-danger me-2"></span> Busy
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../pages/profile-edit.html"
+                      >
+                        <i class="fe fe-user me-2"></i> Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../pages/student-subscriptions.html"
+                      >
+                        <i class="fe fe-star me-2"></i> Subscription
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fe fe-settings me-2"></i> Settings
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="dropdown-divider"></div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="dropdown-item" href="../../index.html">
+                        <i class="fe fe-power me-2"></i> Sign Out
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Container fluid -->
+        <div class="container-fluid p-4">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Page header -->
+              <div
+                class="
+                  border-bottom
+                  pb-4
+                  mb-4
+                  d-md-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <div class="mb-3 mb-md-0">
+                  <h1 class="mb-1 h2 fw-bold">CMS Dashboard</h1>
+                  <!-- Breadcrumb -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="admin-dashboard.html">Dashboard</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#">CMS</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Overview
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+                <div>
+                  <a href="admin-cms-post-new.html" class="btn btn-primary"
+                    >New Post</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold"
+                    >Total Posts</span
+                  >
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">2,000</h2>
+                      <span>100Last 30Days</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-primary
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-primary
+                        "
+                      >
+                        <i class="mdi mdi-text-box-multiple mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold">Assets</span>
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">367</h2>
+                      <span>300+ Media Object</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-warning
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-warning
+                        "
+                      >
+                        <i class="mdi mdi-folder-multiple-image mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold">USers</span>
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">13,234</h2>
+                      <span>1.5k in 30Days</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-success
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-success
+                        "
+                      >
+                        <i class="mdi mdi-account-multiple mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold">Comments</span>
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">120</h2>
+                      <span>20+ Comments</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-info
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-info
+                        "
+                      >
+                        <i class="mdi mdi-comment-text mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card header -->
+                <div
+                  class="
+                    card-header
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    border-bottom-0
+                    card-header-height
+                  "
+                >
+                  <h4 class="mb-0">Recent Posts</h4>
+                  <span class="dropdown dropstart">
+                    <a
+                      class="text-muted text-decoration-none"
+                      href="#"
+                      role="button"
+                      id="courseDropdown1"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <span
+                      class="dropdown-menu"
+                      aria-labelledby="courseDropdown1"
+                    >
+                      <span class="dropdown-header">Settings</span>
+                      <a class="dropdown-item" href="#">
+                        <i class="fe fe-edit dropdown-item-icon"></i>Edit
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fe fe-trash dropdown-item-icon"></i>Remove
+                      </a>
+                    </span>
+                  </span>
+                </div>
+                <!-- Table -->
+                <div class="table-responsive border-0 overflow-y-hidden">
+                  <table class="table mb-0 text-nowrap">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col" class="border-0">POST</th>
+                        <th scope="col" class="border-0">TYPE</th>
+                        <th scope="col" class="border-0">CATEGORY</th>
+                        <th scope="col" class="border-0">DATE</th>
+                        <th scope="col" class="border-0">Author</th>
+                        <th scope="col" class="border-0">STATUS</th>
+                        <th scope="col" class="border-0"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="align-middle border-top-0">
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              Revolutionize how you build the web...
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle border-top-0">
+                          <i class="fe fe-image text-primary fs-4"></i>
+                        </td>
+                        <td class="align-middle border-top-0">
+                          <a href="#" class="text-inherit">Courses</a>
+                        </td>
+                        <td class="align-middle border-top-0">
+                          7 July, 2021 1:42pm
+                        </td>
+                        <td class="align-middle border-top-0">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-7.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">Reva Yokk</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle border-top-0">
+                          <span
+                            class="
+                              badge-dot
+                              bg-warning
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Draft
+                        </td>
+                        <td
+                          class="text-muted align-middle border-top-0 text-end"
+                        >
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown2"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown2"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              Guide to Static Sites with Gatsby.js
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle">
+                          <i class="fe fe-video fs-4 text-primary"></i>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-inherit">Marketing</a>
+                        </td>
+                        <td class="align-middle">6 July, 2021 2:42pm</td>
+                        <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-5.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">March Menon</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <span
+                            class="
+                              badge-dot
+                              bg-warning
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Draft
+                        </td>
+                        <td class="text-muted align-middle text-end">
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown3"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown3"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              The Modern JavaScript Courses
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle">
+                          <i class="fe fe-link fs-4 text-primary"></i>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-inherit">Workshop</a>
+                        </td>
+                        <td class="align-middle">5 July, 2021 5:42pm</td>
+                        <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-4.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">Lisa Menon</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <span
+                            class="
+                              badge-dot
+                              bg-success
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Published
+                        </td>
+                        <td class="text-muted align-middle text-end">
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown4"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown4"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              Online WordPress Courses Become ..
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle">
+                          <i class="fe fe-image text-primary fs-4"></i>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-inherit">Company</a>
+                        </td>
+                        <td class="align-middle">3 July, 2021 10:42am</td>
+                        <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-8.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">Maria Pinto</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <span
+                            class="
+                              badge-dot
+                              bg-success
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Published
+                        </td>
+                        <td class="text-muted align-middle text-end">
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown5"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown5"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              How to become Java Developer
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle">
+                          <i class="fe fe-image text-primary fs-4"></i>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-inherit">Company</a>
+                        </td>
+                        <td class="align-middle">4 July, 2021 12:42pm</td>
+                        <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-10.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">John Deo</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <span
+                            class="
+                              badge-dot
+                              bg-success
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Published
+                        </td>
+                        <td class="text-muted align-middle text-end">
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown6"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown6"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              The Javascript Learning
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle">
+                          <i class="fe fe-video fs-4 text-primary"></i>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-inherit">Marketing</a>
+                        </td>
+                        <td class="align-middle">3 July, 2021 12:42pm</td>
+                        <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-15.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">Misty Smaln</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <span
+                            class="
+                              badge-dot
+                              bg-info
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Schedule
+                        </td>
+                        <td class="text-muted align-middle text-end">
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown7"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown7"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              How to become modern Stack Developer
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle">
+                          <i class="fe fe-image fs-4 text-primary"></i>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-inherit">Company</a>
+                        </td>
+                        <td class="align-middle">3 July, 2021 12:42pm</td>
+                        <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-12.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">March Liso</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <span
+                            class="
+                              badge-dot
+                              bg-success
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Published
+                        </td>
+                        <td class="text-muted align-middle text-end">
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown8"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown8"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h5 class="mb-0">
+                            <a href="#" class="text-inherit">
+                              How to become Full Stack Developer
+                            </a>
+                          </h5>
+                        </td>
+                        <td class="align-middle border-bottom-0">
+                          <i class="fe fe-link fs-4 text-primary"></i>
+                        </td>
+                        <td class="align-middle border-bottom-0">
+                          <a href="#" class="text-inherit">Workshop</a>
+                        </td>
+                        <td class="align-middle border-bottom-0">
+                          2 July, 2021 12:42pm
+                        </td>
+                        <td class="align-middle border-bottom-0">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../../assets/images/avatar/avatar-2.jpg"
+                              alt=""
+                              class="rounded-circle avatar-xs me-2"
+                            />
+                            <h5 class="mb-0">Sina Ray</h5>
+                          </div>
+                        </td>
+                        <td class="align-middle border-bottom-0">
+                          <span
+                            class="
+                              badge-dot
+                              bg-danger
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Deleted
+                        </td>
+                        <td
+                          class="
+                            text-muted
+                            align-middle
+                            text-end
+                            border-bottom-0
+                          "
+                        >
+                          <span class="dropdown dropstart">
+                            <a
+                              class="text-muted text-decoration-none"
+                              href="#"
+                              role="button"
+                              id="courseDropdown9"
+                              data-bs-toggle="dropdown"
+                              data-bs-offset="-20,20"
+                              aria-expanded="false"
+                            >
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <span
+                              class="dropdown-menu"
+                              aria-labelledby="courseDropdown9"
+                            >
+                              <span class="dropdown-header">Settings</span>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-edit dropdown-item-icon"></i
+                                >Edit
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-move dropdown-item-icon"></i
+                                >Move
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-copy dropdown-item-icon"></i
+                                >Copy
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-left dropdown-item-icon"
+                                ></i
+                                >Publish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i
+                                  class="fe fe-toggle-right dropdown-item-icon"
+                                ></i
+                                >Unpublish
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <i class="fe fe-trash dropdown-item-icon"></i
+                                >Delete
+                              </a>
+                            </span>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/libs/odometer/odometer.min.js"></script>
+    <script src="../../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../../assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../../assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+    <script src="../../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="../../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../../assets/libs/file-upload-with-preview/dist/file-upload-with-preview.min.js"></script>
+    <script src="../../assets/libs/dragula/dist/dragula.min.js"></script>
+    <script src="../../assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="../../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../../assets/libs/jQuery.print/jQuery.print.js"></script>
+    <script src="../../assets/libs/prismjs/prism.js"></script>
+    <script src="../../assets/libs/prismjs/components/prism-scss.min.js"></script>
+    <script src="../../assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+    <script src="../../assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+    <script src="../../assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../../assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+    <script src="../../assets/libs/jsvectormap/dist/maps/world.js"></script>
+    <script src="../../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../../assets/js/theme.min.js"></script>
+  </body>
+</html>

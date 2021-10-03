@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon icon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../assets/images/favicon/favicon.ico"
+    />
+
+    <!-- Libs CSS -->
+
+    <link href="../../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/dragula/dist/dragula.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/libs/prismjs/themes/prism.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/dropzone/dist/dropzone.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/magnific-popup/dist/magnific-popup.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/@yaireo/tagify/dist/tagify.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/tiny-slider/dist/tiny-slider.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/libs/tippy.js/dist/tippy.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../../assets/css/theme.min.css" />
+    <title>Event Details | TurnApp - Discover and Book Events</title>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+
+      <!-- Sidebar -->
+      <nav class="navbar-vertical navbar">
+        <div class="nav-scroller">
+          <!-- Brand logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="../../assets/images/brand/logo/turnapp_logo.svg"
+              alt="Turn App"
+            />
+          </a>
+          <!-- Navbar nav -->
+          <ul class="navbar-nav flex-column" id="sideNavbar">
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="nav-divider"></div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="navbar-heading">Apps</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <i class="nav-icon fe fe-home me-2"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./events.html">
+                <i class="nav-icon fe fe-calendar me-2"></i>
+                Events
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./orders.html">
+                <i class="nav-icon fe fe-shopping-bag me-2"></i>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./organisers.html">
+                <i class="nav-icon fe fe-users me-2"></i>
+                Organisers
+              </a>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="./archive.html">
+                <i class="nav-icon fe fe-archive me-2"></i>
+                Archive
+              </a>
+            </li>
+
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="./decline.html">
+                <i class="nav-icon fe fe-slash me-2"></i>
+                Declined
+              </a>
+            </li>
+            <!-- Nav item -->
+
+            <!-- Nav item -->
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="page-content">
+        <div class="header">
+          <!-- navbar -->
+          <nav class="navbar-default navbar navbar-expand-lg">
+            <a id="nav-toggle" href="#">
+              <i class="fe fe-menu"></i>
+            </a>
+            <div class="ms-lg-3 d-none d-md-none d-lg-block"></div>
+            <!--Navbar nav -->
+            <ul
+              class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap"
+            >
+              <!-- List -->
+              <li class="dropdown ms-2">
+                <a
+                  class="rounded-circle"
+                  href="#"
+                  role="button"
+                  id="dropdownUser"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="avatar avatar-md avatar-indicators avatar-online">
+                    <img
+                      alt="avatar"
+                      src="../../assets/images/avatar/avatar-1.jpg"
+                      class="rounded-circle"
+                    />
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownUser"
+                >
+                  <div class="dropdown-item">
+                    <div class="d-flex">
+                      <div
+                        class="avatar avatar-md avatar-indicators avatar-online"
+                      >
+                        <img
+                          alt="avatar"
+                          src="../../assets/images/avatar/avatar-1.jpg"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="ms-3 lh-1">
+                        <h5 class="mb-1">Turn App Admin</h5>
+                        <p class="mb-0 text-muted">turnapp@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="dropdown-item" href="./admin_profile.html">
+                        <i class="fe fe-user me-2"></i> Profile
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="dropdown-divider"></div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="dropdown-item" href="./admin_login.html">
+                        <i class="fe fe-power me-2"></i> Sign Out
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Page Header -->
+        <!-- Container fluid -->
+        <div class="container-fluid p-4">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Page header -->
+              <div
+                class="
+                  border-bottom
+                  pb-4
+                  mb-4
+                  d-md-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <div class="mb-3 mb-md-0">
+                  <h1 class="mb-1 h2 fw-bold">Destination Africa Festival</h1>
+                  <!-- Breadcrumb -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="./index.html">Admin</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="./events.html">Event</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Event Details
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-warning text-white">
+                    <i class="fe fe-edit me-2"></i>Archive Event
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold"
+                    >Tickets Sold</span
+                  >
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">2,000</h2>
+                      <span class="text-warning">300 Remaining</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-primary
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-primary
+                        "
+                      >
+                        <i class="mdi mdi-ticket-percent-outline mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold">Sales</span>
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">KES. 23, 987</h2>
+                      <span class="text-success">KES. 20,675 Net Sales</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-warning
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-warning
+                        "
+                      >
+                        <i class="mdi mdi-cash-multiple mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold"
+                    >Customers</span
+                  >
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">200</h2>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-success
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-success
+                        "
+                      >
+                        <i class="mdi mdi-account-multiple mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <span class="fs-6 text-uppercase fw-semi-bold"
+                    >Transactions</span
+                  >
+                  <div
+                    class="
+                      mt-2
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="lh-1">
+                      <h2 class="h1 fw-bold mb-1">120</h2>
+                      <span class="text-primary">101 Successful</span>
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          bg-light-info
+                          icon-shape icon-xl
+                          rounded-3
+                          text-dark-info
+                        "
+                      >
+                        <i class="mdi mdi-comment-text mdi-24px"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mb-4">
+                <!-- Card header -->
+                <div
+                  class="
+                    card-header
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    border-bottom-0
+                    card-header-height
+                  "
+                >
+                  <h4 class="mb-0">Transactions</h4>
+                </div>
+                <!-- Table -->
+                <div class="table-responsive border-0 overflow-y-hidden">
+                  <table class="table mb-0 text-nowrap">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col" class="border-0">Transaction ID</th>
+                        <th scope="col" class="border-0">Customers</th>
+                        <th scope="col" class="border-0">Tikcet Type</th>
+                        <th scope="col" class="border-0">DATE</th>
+                        <th scope="col" class="border-0">Amount (KES)</th>
+                        <th scope="col" class="border-0">Quantity</th>
+                        <th scope="col" class="border-0">Status</th>
+                        <th scope="col" class="border-0">method</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="align-middle border-top-0">
+                          MC-15852113s09v5050e8
+                        </td>
+                        <td class="align-middle border-top-0">
+                          Imran Freischer
+                        </td>
+                        <td class="align-middle border-top-0">
+                          <a href="#" class="text-inherit">VVIP</a>
+                        </td>
+                        <td class="align-middle border-top-0">
+                          7 July, 2021 1:42pm
+                        </td>
+                        <td class="align-middle border-top-0">1,500</td>
+                        <td class="align-middle border-top-0">3</td>
+                        <td class="align-middle border-top-0">
+                          <span
+                            class="
+                              badge-dot
+                              bg-success
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Success
+                        </td>
+                        <td class="align-middle border-top-0">Mpesa</td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle border-top-0">
+                          MC-15852113s09v5050e8
+                        </td>
+                        <td class="align-middle border-top-0">John Madakin</td>
+                        <td class="align-middle border-top-0">
+                          <a href="#" class="text-inherit">Regular</a>
+                        </td>
+                        <td class="align-middle border-top-0">
+                          7 July, 2021 1:42pm
+                        </td>
+                        <td class="align-middle border-top-0">2,500</td>
+                        <td class="align-middle border-top-0">5</td>
+                        <td class="align-middle border-top-0">
+                          <span
+                            class="
+                              badge-dot
+                              bg-warning
+                              me-1
+                              d-inline-block
+                              align-middle
+                            "
+                          ></span>
+                          Failed
+                        </td>
+                        <td class="align-middle border-top-0">Paypal</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <!-- Libs JS -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/libs/odometer/odometer.min.js"></script>
+    <script src="../../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../../assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../../assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+    <script src="../../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="../../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../../assets/libs/file-upload-with-preview/dist/file-upload-with-preview.min.js"></script>
+    <script src="../../assets/libs/dragula/dist/dragula.min.js"></script>
+    <script src="../../assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="../../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../../assets/libs/jQuery.print/jQuery.print.js"></script>
+    <script src="../../assets/libs/prismjs/prism.js"></script>
+    <script src="../../assets/libs/prismjs/components/prism-scss.min.js"></script>
+    <script src="../../assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+    <script src="../../assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+    <script src="../../assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../../assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+    <script src="../../assets/libs/jsvectormap/dist/maps/world.js"></script>
+    <script src="../../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../../assets/js/theme.min.js"></script>
+  </body>
+</html>

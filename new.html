@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon icon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../assets/images/favicon/favicon.ico"
+    />
+
+    <!-- Libs CSS -->
+
+    <link href="../../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/dragula/dist/dragula.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/libs/prismjs/themes/prism.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/dropzone/dist/dropzone.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/magnific-popup/dist/magnific-popup.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/@yaireo/tagify/dist/tagify.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/libs/tiny-slider/dist/tiny-slider.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/libs/tippy.js/dist/tippy.css" rel="stylesheet" />
+    <link
+      href="../../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../../assets/css/theme.min.css" />
+    <title>Dashboard | TurnApp - Discover and Book Events</title>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe9vDp8DyyKAGv13HUjryfREQLo1tiIgA&libraries=places&callback=initMap"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+
+      <!-- Sidebar -->
+      <nav class="navbar-vertical navbar">
+        <div class="nav-scroller">
+          <!-- Brand logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="../../assets/images/brand/logo/turnapp_logo.svg"
+              alt="Turn App"
+            />
+          </a>
+          <!-- Navbar nav -->
+          <ul class="navbar-nav flex-column" id="sideNavbar">
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="nav-divider"></div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <div class="navbar-heading">Apps</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <i class="nav-icon fe fe-home me-2"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./events.html">
+                <i class="nav-icon fe fe-calendar me-2"></i>
+                Events
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./orders.html">
+                <i class="nav-icon fe fe-shopping-bag me-2"></i>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./organisers.html">
+                <i class="nav-icon fe fe-users me-2"></i>
+                Organisers
+              </a>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="./archive.html">
+                <i class="nav-icon fe fe-archive me-2"></i>
+                Archive
+              </a>
+            </li>
+
+            <!-- Nav item -->
+            <li class="nav-item">
+              <a class="nav-link" href="./decline.html">
+                <i class="nav-icon fe fe-slash me-2"></i>
+                Declined
+              </a>
+            </li>
+            <!-- Nav item -->
+
+            <!-- Nav item -->
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="page-content">
+        <div class="header">
+          <!-- navbar -->
+          <nav class="navbar-default navbar navbar-expand-lg">
+            <a id="nav-toggle" href="#">
+              <i class="fe fe-menu"></i>
+            </a>
+            <div class="ms-lg-3 d-none d-md-none d-lg-block"></div>
+            <!--Navbar nav -->
+            <ul
+              class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap"
+            >
+              <!-- List -->
+              <li class="dropdown ms-2">
+                <a
+                  class="rounded-circle"
+                  href="#"
+                  role="button"
+                  id="dropdownUser"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="avatar avatar-md avatar-indicators avatar-online">
+                    <img
+                      alt="avatar"
+                      src="../../assets/images/avatar/avatar-1.jpg"
+                      class="rounded-circle"
+                    />
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownUser"
+                >
+                  <div class="dropdown-item">
+                    <div class="d-flex">
+                      <div
+                        class="avatar avatar-md avatar-indicators avatar-online"
+                      >
+                        <img
+                          alt="avatar"
+                          src="../../assets/images/avatar/avatar-1.jpg"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="ms-3 lh-1">
+                        <h5 class="mb-1">Turn App Admin</h5>
+                        <p class="mb-0 text-muted">turnapp@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="dropdown-item" href="./admin_profile.html">
+                        <i class="fe fe-user me-2"></i> Profile
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="dropdown-divider"></div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="dropdown-item" href="./admin_login.html">
+                        <i class="fe fe-power me-2"></i> Sign Out
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Page Header -->
+        <!-- Container fluid -->
+        <div class="container-fluid p-4">
+          <div class="row">
+            <!-- Page header -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div
+                class="
+                  border-bottom
+                  pb-4
+                  mb-4
+                  d-md-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <div class="mb-3 mb-md-0">
+                  <h1 class="mb-1 h2 fw-bold">Create New Event</h1>
+                  <!-- Breadcrumb -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#">Admin</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="./events.html">Events</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Add New Event
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+                <div>
+                  <a href="./events.html" class="btn btn-outline-white"
+                    >Back to All Events</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card border-0 mb-4">
+                <!-- Card header -->
+                <div class="card-header">
+                  <h4 class="mb-0">Create Event</h4>
+                </div>
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="mb-4">
+                    <h4 class="text-muted">
+                      <i class="fe fe-info"></i> Organiser's Details
+                    </h4>
+                  </div>
+                  <div class="row">
+                    <div class="mb-3 col-md-12">
+                      <!-- Title -->
+                      <label for="evntOwnerName" class="form-label"
+                        >Event Owner <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntOwnerName"
+                        class="form-control text-dark"
+                        placeholder="Person, Company Name, Organisation etc"
+                      />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label for="evntOwnerEmail" class="form-label"
+                        >Email <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="email"
+                        id="evntOwnerEmail"
+                        class="form-control text-dark"
+                      />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label for="evntOwnerPhone" class="form-label"
+                        >Phone <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="email"
+                        id="evntOwnerPhone"
+                        class="form-control text-dark"
+                      />
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <h4 class="text-muted">
+                      <i class="fe fe-info"></i> Event Details
+                    </h4>
+                  </div>
+                  <div class="row">
+                    <div class="mb-3 col-md-12">
+                      <!-- Title -->
+                      <label for="evntName" class="form-label"
+                        >Event Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntName"
+                        class="form-control text-dark"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label"
+                        >Event Catogory
+                        <span class="text-danger">*</span></label
+                      >
+                      <select class="selectpicker" data-width="100%">
+                        <option selected disabled>Select event Category</option>
+                        <option value="parties">Parties</option>
+                        <option value="clubs">Clubs</option>
+                        <option value="nightlife">Nightlife</option>
+                        <option value="festivals">Festivals</option>
+                        <option value="roadtrips">Road Trips</option>
+                        <option value="events">Events</option>
+                        <option value="concerts">Concerts</option>
+                        <option value="raves">Raves</option>
+                        <option value="camping">Camping</option>
+                        <option value="retreats">Retreats</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label for="evntLink" class="form-label"
+                        >Youtube Url or Website Link</label
+                      >
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon3"
+                            >https://</span
+                          >
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="evntLink"
+                          aria-describedby="evntLink"
+                          placeholder="example.com"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-2 mb-4 col-md-12">
+                      <label for="evntDescription" class="form-label"
+                        >Description</label
+                      >
+                      <div id="editor">
+                        <br />
+                        <h4>One Ring to Rule Them All</h4>
+                        <br />
+                        <p>
+                          22BET in partnership with Kenya Professional Boxing
+                          Commission (KPBC) brings you Kenya Fight Night. As
+                          Sarah Achieng, Kenya and Ruth Chisale of Malawi will
+                          be contending for the Commonwealth Women Championship
+                          title on 2nd October 2021, at Charter Hall Nairobi
+                        </p>
+                        <p>
+                          <br />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="mb-3 col-md-12">
+                      <label for="evntLinup" class="form-label"
+                        >Lineup
+                        <span class="text-muted"
+                          >(Press enter to add a new lineup)</span
+                        ></label
+                      >
+                      <form>
+                        <input
+                          name="tags"
+                          id="evntLinup"
+                          value="jquery, bootstrap"
+                          autofocus
+                        />
+                      </form>
+                    </div>
+
+                    <div class="mb-3 col-md-12">
+                      <!-- Title -->
+                      <label for="evntVenue" class="form-label"
+                        >Venue <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntVenue"
+                        class="form-control text-dark"
+                        placeholder="Search venue -- Google Maps"
+                        size="50"
+                      />
+                    </div>
+
+                    <div class="mb-3 col-md-12">
+                      <label for="evntPoster" class="form-label"
+                        >Event Poster <span class="text-danger">*</span></label
+                      >
+                      <form action="#" class="dropzone mt-4 border-dashed">
+                        <div class="fallback">
+                          <input name="file" type="file" multiple />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                      <label for="evntStartDate" class="form-label"
+                        >Start Date <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntStartDate"
+                        class="form-control text-dark flatpickr"
+                        placeholder="Select Start Date"
+                      />
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                      <label for="evntEndDate" class="form-label"
+                        >End Date <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntEndDate"
+                        class="form-control text-dark flatpickr"
+                        placeholder="Select End Date"
+                      />
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                      <label for="evntStartTime" class="form-label"
+                        >Start Time <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntStartTime"
+                        class="form-control text-dark flatpickr"
+                        placeholder="Select Start Time"
+                      />
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                      <label for="evntEndTime" class="form-label"
+                        >End Time <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="evntEndTime"
+                        class="form-control text-dark flatpickr"
+                        placeholder="Select End Time"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="my-4">
+                      <h4 class="text-muted">
+                        <i class="fe fe-info"></i> Ticket Details
+                      </h4>
+                    </div>
+
+                    <div id="tickets">
+                      <div class="row deleteParent">
+                        <div class="mb-3 col-md-5">
+                          <label for="ticketName1" class="form-label"
+                            >Ticket<span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            id="ticketName1"
+                            class="form-control text-dark"
+                          />
+                        </div>
+
+                        <div class="mb-3 col-md-3">
+                          <label for="ticketPrice1" class="form-label"
+                            >Price<span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="number"
+                            id="ticketPrice1"
+                            class="form-control text-dark"
+                          />
+                        </div>
+
+                        <div class="mb-3 col-md-3">
+                          <label for="ticketQnty1" class="form-label"
+                            >Quantity<span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="number"
+                            id="ticketQnty1"
+                            class="form-control text-dark"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="mb-3 col-md-12 d-flex justify-content-end">
+                        <button
+                          type="button"
+                          id="addTicket"
+                          class="btn btn-outline-primary"
+                        >
+                          <i class="fe fe-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button type="submit" class="btn w-full btn-primary">
+                        Submit for Review
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+              <!-- Card -->
+              <div class="card mt-4 mt-lg-0 mb-4">
+                <!-- Card Header -->
+                <div class="card-header d-lg-flex">
+                  <h4 class="mb-0">Event Info</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script>
+      function initMap() {
+        const center = { lat: 50.064192, lng: -130.605469 };
+        // Create a bounding box with sides ~10km away from the center point
+        const defaultBounds = {
+          north: center.lat + 0.1,
+          south: center.lat - 0.1,
+          east: center.lng + 0.1,
+          west: center.lng - 0.1,
+        };
+        const input = document.getElementById('evntVenue');
+        const options = {
+          bounds: defaultBounds,
+          componentRestrictions: { country: 'us' },
+          fields: ['place_id', 'geometry', 'name'],
+          strictBounds: false,
+          types: ['establishment'],
+        };
+        const autocomplete = new google.maps.places.Autocomplete(
+          input,
+          options
+        );
+      }
+
+      // add tickets
+      (function () {
+        let counter = 1;
+        const btn = document.getElementById('addTicket');
+        const form = document.getElementById('tickets');
+
+        const addInput = function () {
+          counter++;
+          const ticketContainer = document.getElementById('tickets');
+          const row = document.createElement('div');
+          row.classList.add('row', 'deleteParent');
+
+          row.innerHTML = `
+          <div class="mb-3 col-md-5">
+            <label for="ticketName${counter}" class="form-label"
+              >Ticket <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              id="ticketName${counter}"
+              name="ticketName[]"
+              class="form-control text-dark"
+            />
+          </div>
+
+          <div class="mb-3 col-md-3">
+            <label for="ticketPrice${counter}" class="form-label"
+              >Price <span class="text-danger">*</span></label
+            >
+            <input
+              type="number"
+              name="ticketPrice[]"
+              id="ticketPrice${counter}"
+              class="form-control text-dark"
+            />
+          </div>
+
+          <div class="mb-3 col-md-3">
+            <label for="ticketQnty${counter}" class="form-label"
+              >Quantity <span class="text-danger">*</span></label
+            >
+            <input
+              type="number"
+              name="ticketQnty[]"
+              id="ticketQnty${counter}"
+              class="form-control text-dark"
+            />
+          </div>
+
+          <div class="mb-3 col-md-1">
+            <button
+              type="button" onclick="deleteTicket(this)"
+              class="btn btn-sm btn-outline-danger ticketDelete mt-5"
+            >
+              <i class="fe fe-trash-2"></i>
+            </button>
+          </div>
+          `;
+
+          ticketContainer.appendChild(row);
+        };
+
+        btn.addEventListener(
+          'click',
+          function () {
+            addInput();
+          }.bind(this)
+        );
+      })();
+
+      // delete ticket
+      function deleteTicket(e) {
+        e.parentNode.parentNode.remove();
+      }
+    </script>
+    <!-- Libs JS -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/libs/odometer/odometer.min.js"></script>
+    <script src="../../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../../assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../../assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+    <script src="../../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="../../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../../assets/libs/file-upload-with-preview/dist/file-upload-with-preview.min.js"></script>
+    <script src="../../assets/libs/dragula/dist/dragula.min.js"></script>
+    <script src="../../assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="../../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../../assets/libs/jQuery.print/jQuery.print.js"></script>
+    <script src="../../assets/libs/prismjs/prism.js"></script>
+    <script src="../../assets/libs/prismjs/components/prism-scss.min.js"></script>
+    <script src="../../assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+    <script src="../../assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+    <script src="../../assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../../assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+    <script src="../../assets/libs/jsvectormap/dist/maps/world.js"></script>
+    <script src="../../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../../assets/js/theme.min.js"></script>
+  </body>
+</html>
