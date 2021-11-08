@@ -88,10 +88,31 @@
               <div class="navbar-heading">Apps</div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">
-                <i class="nav-icon fe fe-home me-2"></i>
-                Dashboard
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#navDashboard"
+                aria-expanded="false"
+                aria-controls="navDashboard"
+              >
+                <i class="nav-icon fe fe-home me-2"></i> Dashboard
               </a>
+              <div
+                id="navDashboard"
+                class="collapse"
+                data-bs-parent="#sideNavbar"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"> Overview </a>
+                  </li>
+                  <!-- Nav item -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Analytics </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./events.html">
@@ -225,7 +246,11 @@
                   <h1 class="mb-0 h2 fw-bold">Dashboard</h1>
                 </div>
                 <div class="d-flex">
-                  <a href="./new.html" class="btn btn-primary"
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#newModal"
                     ><i class="fe fe-plus me-2"></i>Create Event</a
                   >
                 </div>
@@ -1114,6 +1139,103 @@
                     <!-- List group -->
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="newModal"
+      tabindex="-1"
+      aria-labelledby="newModalLabel"
+      style="display: none"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header align-items-center">
+            <h4 class="mb-0" id="newchatModalLabel">Login</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-0">
+            <!-- bady -->
+            <!-- Card -->
+            <div class="card mb-4">
+              <!-- Card Body -->
+              <div class="card-body">
+                <!-- Form -->
+                <form class="row">
+                  <div class="mb-3 col-12 col-md-6">
+                    <label class="form-label" for="fname">First Name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      class="form-control"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-12 col-md-6">
+                    <label class="form-label" for="lname">Last Name</label>
+                    <input
+                      type="text"
+                      id="lname"
+                      class="form-control"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-12 col-md-12">
+                    <label class="form-label" for="phone"
+                      >Phone Number (Optional)</label
+                    >
+                    <input
+                      type="text"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-12 col-md-12">
+                    <label class="form-label" for="address1"
+                      >Address Line 1</label
+                    >
+                    <input
+                      type="text"
+                      id="address1"
+                      class="form-control"
+                      placeholder="Address"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-12 col-md-12">
+                    <label class="form-label" for="address2"
+                      >Address Line 2 (Optional)</label
+                    >
+                    <input
+                      type="text"
+                      id="address2"
+                      class="form-control"
+                      placeholder="Address"
+                      required
+                    />
+                  </div>
+                </form>
               </div>
             </div>
           </div>
